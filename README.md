@@ -2,6 +2,11 @@
 
 A Next.js website focused on providing evidence-based health and wellness information for middle-aged men.
 
+[![Firebase Deploy](https://github.com/Joshjay11/vigorformen/actions/workflows/firebase-deploy.yml/badge.svg)](https://github.com/Joshjay11/vigorformen/actions/workflows/firebase-deploy.yml)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=Joshjay11/vigorformen)](https://dependabot.com)
+
+**Live Site:** [https://vigor4men.web.app](https://vigor4men.web.app)
+
 ## Features
 
 - **Modern UI**: Built with Next.js, React, and Tailwind CSS
@@ -100,6 +105,34 @@ NEXT_PUBLIC_SANITY_PROJECT_ID=your-sanity-project-id
 NEXT_PUBLIC_SANITY_DATASET=production
 SANITY_API_TOKEN=your-sanity-api-token
 ```
+
+## CI/CD and Automated Updates
+
+### GitHub Actions Workflow
+
+This project uses GitHub Actions for continuous integration and deployment:
+
+1. **Automated Testing**: Runs tests on every push and pull request
+2. **Automated Builds**: Ensures the project builds successfully
+3. **Automated Deployment**: Deploys to Firebase Hosting automatically when changes are pushed to the master branch
+
+To set up the Firebase deployment in GitHub Actions:
+
+1. Go to your GitHub repository settings
+2. Navigate to "Secrets and variables" > "Actions"
+3. Add a new repository secret:
+   - Name: `FIREBASE_SERVICE_ACCOUNT`
+   - Value: Your Firebase service account JSON (can be generated in Firebase Console > Project Settings > Service Accounts)
+
+### Dependabot
+
+This project uses GitHub Dependabot to keep dependencies up-to-date:
+
+- Automatically checks for outdated dependencies weekly
+- Creates pull requests for dependency updates
+- Includes security patches and version upgrades
+
+Dependabot is configured in `.github/dependabot.yml` and requires no additional setup.
 
 ## License
 
