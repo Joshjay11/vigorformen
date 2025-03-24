@@ -1,0 +1,17 @@
+# Favicon Instructions
+
+To add a favicon to your website:
+
+1. Create a favicon.ico file (you can use online tools like favicon.io)
+2. Place the favicon.ico file in this directory (public/)
+3. The favicon will automatically be served at the root of your website
+
+Additional favicon formats for better cross-platform support:
+- apple-touch-icon.png (180x180px) for iOS devices
+- favicon-32x32.png (32x32px) for most browsers
+- favicon-16x16.png (16x16px) for older browsers
+- site.webmanifest for PWA support
+
+You can generate all these files using favicon generators like:
+- https://favicon.io/
+- https://realfavicongenerator.net/
